@@ -16,6 +16,39 @@
         <jakartaee>8.0</jakartaee>
     </properties>
     
+    <repositories>
+        
+        <!-- PRIMEFACES REPOSITORY -->
+        <repository>
+            <id>prime-repo</id>
+            <name>PrimeFaces Maven Repository</name>
+            <url>http://repository.primefaces.org</url>
+            <layout>default</layout>
+        </repository>        
+                
+        <!-- FACELETS TAGLIBRARIES REPOSITORY -->
+        
+               
+        <!-- REPOSITÓRIO DA AOP ALLIANCE -->
+        <repository>
+            <id>com.springsource.repository.bundles.release</id>
+            <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
+            <url>http://repository.springsource.com/maven/bundles/release</url>
+        </repository>
+        <repository>
+            <id>com.springsource.repository.bundles.external</id>
+            <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+            <url>http://repository.springsource.com/maven/bundles/external</url>
+        </repository>
+		
+        <!-- REPOSITÓRIO DO JASPER REPORTS -->        
+        <repository>
+            <id>jasperreports</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+        
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -23,15 +56,393 @@
             <version>${jakartaee}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>8.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- || DEPENDÊNCIAS DO JAVA SERVER FACES || -->                        
+        <!-- ############## JSF-API ################ -->
+        <!-- https://mvnrepository.com/artifact/javax.faces/jsf-api -->
+        <dependency>
+            <groupId>javax.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- ############## JSF-IMPL ############### -->
+        <!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-impl -->
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>2.2.20</version>
+        </dependency>
+                
+        <!-- ################ JSTL ################# -->
+        <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+    
+        <!-- ############ SERVLET-API ############## --> 
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- ############## JSP-API ################ -->
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- ##### DEPENDÊNCIAS DO PRIMEFACES ##### -->
         <!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>8.0</version>
         </dependency>
-    </dependencies>
-    
-     <build>
+        <!-- ######## TEMAS DO PRIMEFACES ######### -->        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/cupertino -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>cupertino</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/le-frog -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>le-frog</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/sam -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>sam</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/pepper-grinder -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>pepper-grinder</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/smoothness -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>smoothness</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/ui-lightness -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>ui-lightness</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.primefaces.themes/south-street -->
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>south-street</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+
+        <!-- SLF4J -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.32</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <!-- |||||| DEPENDÊNCIAS DO HIBERNATE |||||| -->
+
+        <!-- ########### HIBERNATE-C3P0 ############ -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>5.6.1.Final</version>
+        </dependency>
+            
+        <!-- ############### C3P0 ################## -->
+        <!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
+        </dependency>
+        
+        <!-- ########### HIBERNATE CORE ############ -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.0.1.Final</version>
+            <type>jar</type>
+        </dependency>
+
+        <!-- ########### HIBERNATE ANTLR ########### -->
+        <!-- https://mvnrepository.com/artifact/antlr/antlr -->
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.7</version>
+        </dependency>
+        
+        <!-- ######### COMMONS-COLLECTIONS ######### -->
+        <!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        
+        <!-- ############### DOM4J ################# -->
+        <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        
+        <!-- #### HIBERNATE-COMMONS-ANNOTATIONS #### -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
+        <dependency>
+            <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>5.1.2.Final</version>
+        </dependency>
+        
+        <!-- ############# HIBERNATE-JPA ########### -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.2.Final</version>
+        </dependency>
+        
+        <!-- ############## JAVASSIST ############## -->
+        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.28.0-GA</version>
+        </dependency>
+        
+        <!-- ############ JBOSS-LOGGING ############ -->
+        <!-- https://mvnrepository.com/artifact/org.jboss.logging/jboss-logging -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.4.2.Final</version>
+        </dependency>
+        
+        <!-- ######## JBOSS-TRANSACTION-API ######## -->
+        <!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+                
+        <!-- ##### JPA-HIBERNATE-ENTITYMANAGER ##### -->                        
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.6.1.Final</version>
+        </dependency>
+                
+        <!-- ########## HIBERNATE-EHCACHE ########## -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>5.6.1.Final</version>
+        </dependency>
+
+        <!-- ############ EHCACHE-CORE ############# -->
+        <!-- https://mvnrepository.com/artifact/net.sf.ehcache/ehcache-core -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>2.6.11</version>
+        </dependency>
+
+        <!-- || DEPENDÊNCIAS DO JAVAX-PERSISTENCE || -->
+        <!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        
+        <!-- |||| DEPENDÊNCIAS DO MYSQL DRIVER  |||| -->        
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.27</version>
+        </dependency>
+        
+        <!-- |||| DEPENDÊNCIAS DO SPRING-SECURITY || -->  
+                                                 
+        <!-- ### FACELETS-TAGLIB-JSF2.0-SPRING-3 ### -->
+                               
+        <!-- ####### SPRING-SECURITY-TAGLIBS ####### -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>5.6.0</version>
+        </dependency>
+        
+        <!-- ####### SPRING-SECURITY-CONFIG ######## -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.6.0</version>
+        </dependency>
+
+        <!-- ######## SPRING-SECURITY-CORE ######### -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.6.0</version>
+        </dependency>
+ 
+        <!-- ######### SPRING-SECURITY-WEB ######### -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>5.6.0</version>
+        </dependency>
+
+        <!-- ||| DEPENDÊNCIAS DO SPRING FRAMEWORK |||-->          
+        <!-- ############# SPRING-ASM ############## -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-asm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-asm</artifactId>
+            <version>3.1.4.RELEASE</version>
+        </dependency>
+
+        <!-- ############ SPRING-BEANS ############# -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+        
+        <!-- ########### SPRING-CONTEXT ############ -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+                
+        <!-- ############# SPRING-CORE ############# -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+
+        <!-- ########## SPRING-EXPRESSION ########## -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+
+        <!-- ############# SPRING-JDBC ############# -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+        
+        <!-- ############## SPRING-TX ############## -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+        
+        <!-- ############# SPRING-WEB ############# -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+
+        <!-- ############# SPRING-AOP ############# -->    
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.3.13</version>
+        </dependency>
+        
+        <!-- ############ AOP-ALLIANCE ############ -->
+        <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- ############ AOP-ALLIANCE ############ -->
+        <!-- https://mvnrepository.com/artifact/org.aopalliance/com.springsource.org.aopalliance -->
+        
+        <!-- ||||||| DEPENDÊNCIAS DO J-UNIT |||||||| -->        
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>    
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -1,0 +1,3 @@
+com\mycompany\thestore\JAXRSConfiguration.class
+com\mycompany\thestore\util\HibernateUtil.class
+com\mycompany\thestore\resources\JavaEE8Resource.class
