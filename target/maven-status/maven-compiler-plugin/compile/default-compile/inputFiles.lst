@@ -1,3 +1,14 @@
-C:\Users\luis_\Documents\NetBeansProjects\TheStore\src\main\java\com\mycompany\thestore\JAXRSConfiguration.java
-C:\Users\luis_\Documents\NetBeansProjects\TheStore\src\main\java\com\mycompany\thestore\resources\JavaEE8Resource.java
-C:\Users\luis_\Documents\NetBeansProjects\TheStore\src\main\java\com\mycompany\thestore\util\HibernateUtil.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\Product.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\ProductCode.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\dao\HibernateDAO.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\dao\InterfaceDAO.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\PurchaseOrder.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\JAXRSConfiguration.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\DiscountCode.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\Manufacturer.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\Customer.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\resources\JavaEE8Resource.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\util\PhaseListenerSemeru.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\model\entities\MicroMarket.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\util\FacesContextUtil.java
+C:\Users\luis_\Documents\Git\TheShop\semeru_jsf_maven\src\main\java\com\mycompany\thestore\util\HibernateUtil.java

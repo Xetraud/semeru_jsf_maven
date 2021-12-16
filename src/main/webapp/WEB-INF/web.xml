@@ -8,6 +8,7 @@
     
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     
     <!-- Duração da sessão -->
@@ -27,11 +28,11 @@
         </param-value>
     </context-param>  -->
 
-    <dependency>
+    <!-- <dependency>
         <groupId>org.primefaces.themes</groupId>
         <artifactId>sam</artifactId>
         <version>1.0.4</version>
-    </dependency>
+    </dependency> -->
     
     <!-- Configurações do tema do PrimeFaces -->
     <context-param>  
@@ -94,12 +95,12 @@
     
     <!-- Filtros de Upload -->
     
-    <filter>  
+    <!-- <filter>  
         <filter-name>PrimeFaces FileUpload Filter</filter-name>  
         <filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>  
     </filter>  
     <filter-mapping>  
         <filter-name>PrimeFaces FileUpload Filter</filter-name>  
         <servlet-name>Faces Servlet</servlet-name>  
-    </filter-mapping>
+    </filter-mapping> -->
 </web-app>

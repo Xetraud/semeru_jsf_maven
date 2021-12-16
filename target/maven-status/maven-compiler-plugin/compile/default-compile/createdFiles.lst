@@ -1,3 +1,14 @@
+com\mycompany\thestore\model\dao\InterfaceDAO.class
+com\mycompany\thestore\model\entities\PurchaseOrder.class
+com\mycompany\thestore\model\entities\Customer.class
+com\mycompany\thestore\model\entities\Product.class
+com\mycompany\thestore\model\dao\HibernateDAO.class
+com\mycompany\thestore\model\entities\ProductCode.class
 com\mycompany\thestore\JAXRSConfiguration.class
+com\mycompany\thestore\model\entities\DiscountCode.class
 com\mycompany\thestore\util\HibernateUtil.class
+com\mycompany\thestore\util\FacesContextUtil.class
+com\mycompany\thestore\model\entities\Manufacturer.class
+com\mycompany\thestore\model\entities\MicroMarket.class
 com\mycompany\thestore\resources\JavaEE8Resource.class
+com\mycompany\thestore\util\PhaseListenerSemeru.class
